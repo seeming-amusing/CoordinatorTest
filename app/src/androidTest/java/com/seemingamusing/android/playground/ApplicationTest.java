@@ -1,4 +1,4 @@
-package com.seemingamusing.android.coordinatortest;
+package com.seemingamusing.android.playground;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

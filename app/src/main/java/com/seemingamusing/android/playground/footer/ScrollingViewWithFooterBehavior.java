@@ -1,4 +1,4 @@
-package com.seemingamusing.android.coordinatortest;
+package com.seemingamusing.android.playground.footer;
 
 import android.content.Context;
 import android.support.design.widget.AppBarLayout;
@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
+import com.seemingamusing.android.playground.R;
 
 public class ScrollingViewWithFooterBehavior extends AppBarLayout.ScrollingViewBehavior {
 

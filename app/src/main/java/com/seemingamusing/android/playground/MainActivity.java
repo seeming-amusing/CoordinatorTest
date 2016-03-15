@@ -1,7 +1,9 @@
-package com.seemingamusing.android.coordinatortest;
+package com.seemingamusing.android.playground;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,10 +12,12 @@ import android.widget.FrameLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.seemingamusing.android.playground.common.MockedDataAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
   @Bind(R.id.toolbar) Toolbar mToolbar;
+  @Bind(R.id.content_view) RecyclerView mContentView;
   @Bind(R.id.footer_bar) FrameLayout mFooterBar;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
     setSupportActionBar(mToolbar);
+    initializeContentView();
+  }
+
+  private void initializeContentView() {
+    mContentView.setLayoutManager(new LinearLayoutManager(this));
+    mContentView.setAdapter(new MockedDataAdapter(this));
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {
