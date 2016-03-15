@@ -1,4 +1,5 @@
 <resources>
+
   <string name="app_name">Coordinator Test</string>
   <string name="large_text">
     "Material is the metaphor.\n\n"
@@ -90,5 +91,23 @@
     "when a user tries to pick up one of cards.\n\n"
   </string>
   <string name="action_show">Show Footer</string>
-  <string name="footer_scroll_behavior" translatable="false">com.seemingamusing.android.coordinatortest.ScrollingViewWithFooterBehavior</string>
+
+  <string-array name="mocked_data">
+    <item>Iron Man</item>
+    <item>The Incredible Hulk</item>
+    <item>Iron Man 2</item>
+    <item>Thor</item>
+    <item>Captain America</item>
+    <item>The Avengers</item>
+    <item>Iron Man 3</item>
+    <item>Thor: The Dark World</item>
+    <item>Captain America: Winter Soldier</item>
+    <item>Guardians of the Galaxy</item>
+    <item>The Avengers: Age of Ultron</item>
+    <item>Ant Man</item>
+    <item>Captain America: Civil War</item>
+  </string-array>
+
+  <string name="footer_scroll_behavior" translatable="false">com.seemingamusing.android.playground.footer.ScrollingViewWithFooterBehavior</string>
+
 </resources>
