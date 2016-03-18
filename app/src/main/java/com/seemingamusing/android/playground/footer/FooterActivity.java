@@ -1,4 +1,4 @@
-package com.seemingamusing.android.playground;
+package com.seemingamusing.android.playground.footer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +12,10 @@ import android.widget.FrameLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.seemingamusing.android.playground.R;
 import com.seemingamusing.android.playground.common.MockedDataAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class FooterActivity extends AppCompatActivity {
 
   @Bind(R.id.toolbar) Toolbar mToolbar;
   @Bind(R.id.content_view) RecyclerView mContentView;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_footer);
     ButterKnife.bind(this);
+    setTitle(R.string.sample_footer);
     setSupportActionBar(mToolbar);
     initializeContentView();
   }

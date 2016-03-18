@@ -7,5 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/footer_scroll_behavior"
-    tools:showIn="@layout/activity_main"
+    tools:showIn="@layout/activity_footer"
     tools:context="com.seemingamusing.android.playground.MainActivity"/>
