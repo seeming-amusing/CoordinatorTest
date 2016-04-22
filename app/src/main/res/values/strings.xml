@@ -109,6 +109,7 @@
     <item>The Avengers: Age of Ultron</item>
     <item>Ant Man</item>
     <item>Captain America: Civil War</item>
+    <item>Doctor Strange</item>
   </string-array>
 
   <string name="footer_scroll_behavior" translatable="false">com.seemingamusing.android.playground.footer.ScrollingViewWithFooterBehavior</string>
