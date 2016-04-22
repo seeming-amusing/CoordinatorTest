@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import com.seemingamusing.android.playground.bottomsheet.BottomSheetActivity;
 import com.seemingamusing.android.playground.footer.FooterActivity;
 import com.seemingamusing.android.playground.model.SampleActivity;
 
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
   private static class ActivitiesAdapter extends RecyclerView.Adapter<ActivityViewHolder> {
 
     private final SampleActivity[] mActivities = new SampleActivity[] {
-        new SampleActivity(FooterActivity.class, "Footer Sample")
+        new SampleActivity(FooterActivity.class, "Footer Sample"),
+        new SampleActivity(BottomSheetActivity.class, "Bottom Sheet Sample")
     };
     private final Context mContext;
     private final LayoutInflater mInflater;

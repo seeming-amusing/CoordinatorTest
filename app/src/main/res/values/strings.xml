@@ -92,6 +92,7 @@
   </string>
 
   <string name="sample_footer">Footer Sample</string>
+  <string name="sample_bottom_sheet">Bottom Sheet Sample</string>
   <string name="action_show">Show Footer</string>
   <string name="footer_bar_content">Footer Content</string>
 
