@@ -30,6 +30,16 @@ public class FooterActivity extends AppCompatActivity {
     initializeContentView();
   }
 
+  @Override public void setSupportActionBar(Toolbar toolbar) {
+    mToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+    mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View v) {
+        finish();
+      }
+    });
+    super.setSupportActionBar(toolbar);
+  }
+
   private void initializeContentView() {
     mContentView.setLayoutManager(new LinearLayoutManager(this));
     mContentView.setAdapter(new MockedDataAdapter(this));
