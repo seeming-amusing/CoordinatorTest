@@ -3,4 +3,5 @@
   <color name="colorPrimary">#0d47a1</color>
   <color name="colorPrimaryDark">#1a237e</color>
   <color name="colorAccent">#d84315</color>
+  <color name="bottomSheetBackground">#fedcba</color>
 </resources>

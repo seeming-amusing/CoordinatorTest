@@ -20,13 +20,17 @@
     android:fitsSystemWindows="true"
     tools:context="com.seemingamusing.android.playground.bottomsheet.BottomSheetActivity">
 
-    <include layout="@layout/content_adapter" />
+    <include
+      layout="@layout/content_adapter"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="@dimen/bottom_sheet_peek_height" />
 
     <include
       android:id="@+id/design_bottom_sheet"
       layout="@layout/content_simple"
       android:layout_width="match_parent"
-      android:layout_height="150dp"
+      android:layout_height="match_parent"
       app:layout_behavior="@string/bottom_sheet_behavior" />
 
   </android.support.design.widget.CoordinatorLayout>
