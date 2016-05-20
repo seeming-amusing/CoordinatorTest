@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:orientation="vertical">
+  android:fitsSystemWindows="true"
+  tools:context=".bottomsheet.BottomSheetActivity">
 
-  <android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?actionBarSize"
-    android:background="?colorPrimary"
-    app:title="@string/sample_bottom_sheet"
-    app:titleTextColor="@android:color/white" />
-
-  <android.support.design.widget.CoordinatorLayout
+  <include
+    layout="@layout/content_adapter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.seemingamusing.android.playground.bottomsheet.BottomSheetActivity">
+    android:layout_marginBottom="@dimen/bottom_sheet_peek_height" />
 
-    <include
-      layout="@layout/content_adapter"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_marginBottom="@dimen/bottom_sheet_peek_height" />
+  <include
+    android:id="@+id/design_bottom_sheet"
+    layout="@layout/content_simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/bottom_sheet_behavior" />
 
-    <include
-      android:id="@+id/design_bottom_sheet"
-      layout="@layout/content_simple"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      app:layout_behavior="@string/bottom_sheet_behavior" />
-
-  </android.support.design.widget.CoordinatorLayout>
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
