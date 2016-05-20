@@ -35,18 +35,12 @@
 
   <include layout="@layout/content_adapter" />
 
-  <FrameLayout
+  <Button
     android:id="@+id/footer_bar"
+    style="@style/TextAppearance.Overlay"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="bottom">
-
-    <TextView
-      style="@style/TextAppearance.Footer"
-      android:layout_width="match_parent"
-      android:layout_height="?attr/footerBarHeight"
-      android:text="@string/footer_bar_content" />
-
-  </FrameLayout>
+    android:layout_height="?attr/footerBarHeight"
+    android:layout_gravity="bottom"
+    android:text="@string/footer_bar_content" />
 
 </android.support.design.widget.CoordinatorLayout>

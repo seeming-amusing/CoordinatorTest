@@ -6,15 +6,14 @@ import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-import android.widget.FrameLayout;
 import com.seemingamusing.android.playground.R;
 
-public class ScrollingViewWithFooterBehavior extends AppBarLayout.ScrollingViewBehavior {
+public class FooterBarBehavior extends AppBarLayout.ScrollingViewBehavior {
 
-  public ScrollingViewWithFooterBehavior() {
+  public FooterBarBehavior() {
   }
 
-  public ScrollingViewWithFooterBehavior(Context context, AttributeSet attrs) {
+  public FooterBarBehavior(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
@@ -37,7 +36,7 @@ public class ScrollingViewWithFooterBehavior extends AppBarLayout.ScrollingViewB
   }
 
   private boolean isFooterBar(View dependency) {
-    return dependency instanceof FrameLayout && dependency.getId() == R.id.footer_bar;
+    return dependency.getId() == R.id.footer_bar;
   }
 
   @Override

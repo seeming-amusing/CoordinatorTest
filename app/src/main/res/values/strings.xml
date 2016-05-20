@@ -120,6 +120,6 @@
     <item>Avengers: Infinity War - Part 2 (2019)</item>
   </string-array>
 
-  <string name="footer_scroll_behavior" translatable="false">com.seemingamusing.android.playground.footer.ScrollingViewWithFooterBehavior</string>
+  <string name="footer_bar_behavior" translatable="false">com.seemingamusing.android.playground.footer.FooterBarBehavior</string>
 
 </resources>

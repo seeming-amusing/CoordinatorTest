@@ -8,7 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -19,7 +18,7 @@ public class FooterActivity extends AppCompatActivity {
 
   @Bind(R.id.toolbar) Toolbar mToolbar;
   @Bind(R.id.content_view) RecyclerView mContentView;
-  @Bind(R.id.footer_bar) FrameLayout mFooterBar;
+  @Bind(R.id.footer_bar) View mFooterBar;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
