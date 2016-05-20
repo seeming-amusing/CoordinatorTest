@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 import com.seemingamusing.android.playground.bottomsheet.BottomSheetActivity;
 import com.seemingamusing.android.playground.footer.FooterActivity;
 import com.seemingamusing.android.playground.model.SampleActivity;
+import com.seemingamusing.android.playground.topbar.TopBarActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final SampleActivity[] mActivities = new SampleActivity[] {
         new SampleActivity(FooterActivity.class, "Footer Sample"),
-        new SampleActivity(BottomSheetActivity.class, "Bottom Sheet Sample")
+        new SampleActivity(BottomSheetActivity.class, "Bottom Sheet Sample"),
+        new SampleActivity(TopBarActivity.class, "Top Bar Sample"),
     };
     private final Context mContext;
     private final LayoutInflater mInflater;

@@ -31,6 +31,12 @@
       android:parentActivityName=".MainActivity"
       android:theme="@style/AppTheme" />
 
+    <activity
+      android:name=".topbar.TopBarActivity"
+      android:label="@string/sample_top_bar"
+      android:parentActivityName=".MainActivity"
+      android:theme="@style/AppTheme" />
+
   </application>
 
 </manifest>

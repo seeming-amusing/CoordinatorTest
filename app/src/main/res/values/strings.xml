@@ -92,8 +92,10 @@
 
   <string name="sample_footer">Footer Sample</string>
   <string name="sample_bottom_sheet">Bottom Sheet Sample</string>
+  <string name="sample_top_bar">Top Bar Sample</string>
   <string name="action_show">Show Footer</string>
   <string name="footer_bar_content">Footer Content</string>
+  <string name="top_bar_content">Top Bar Content</string>
 
   <string-array name="mocked_data">
     <item>Iron Man (2008)</item>
@@ -121,5 +123,6 @@
   </string-array>
 
   <string name="footer_bar_behavior" translatable="false">com.seemingamusing.android.playground.footer.FooterBarBehavior</string>
+  <string name="top_bar_behavior" translatable="false">com.seemingamusing.android.playground.topbar.TopBarBehavior</string>
 
 </resources>
