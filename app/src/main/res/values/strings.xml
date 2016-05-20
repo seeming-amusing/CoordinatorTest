@@ -96,20 +96,28 @@
   <string name="footer_bar_content">Footer Content</string>
 
   <string-array name="mocked_data">
-    <item>Iron Man</item>
-    <item>The Incredible Hulk</item>
-    <item>Iron Man 2</item>
-    <item>Thor</item>
-    <item>Captain America</item>
-    <item>The Avengers</item>
-    <item>Iron Man 3</item>
-    <item>Thor: The Dark World</item>
-    <item>Captain America: Winter Soldier</item>
-    <item>Guardians of the Galaxy</item>
-    <item>The Avengers: Age of Ultron</item>
-    <item>Ant Man</item>
-    <item>Captain America: Civil War</item>
-    <item>Doctor Strange</item>
+    <item>Iron Man (2008)</item>
+    <item>The Incredible Hulk (2008)</item>
+    <item>Iron Man 2 (2010)</item>
+    <item>Thor (2011)</item>
+    <item>Captain America (2011)</item>
+    <item>The Avengers (2012)</item>
+    <item>Iron Man 3 (2013)</item>
+    <item>Thor: The Dark World (2013)</item>
+    <item>Captain America: Winter Soldier (2014)</item>
+    <item>Guardians of the Galaxy (2014)</item>
+    <item>Avengers: Age of Ultron (2015)</item>
+    <item>Ant-Man (2015)</item>
+    <item>Captain America: Civil War (2016)</item>
+    <item>Doctor Strange (2016)</item>
+    <item>Guardians of the Galaxy, Vol. 2 (2017)</item>
+    <item>Spiderman: Homecoming (2017)</item>
+    <item>Thor: Ragnarok (2017)</item>
+    <item>Black Panther (2018)</item>
+    <item>Avengers: Infinity War - Part 1 (2018)</item>
+    <item>Ant-Man and the Wasp (2018)</item>
+    <item>Captain Marvel (2019)</item>
+    <item>Avengers: Infinity War - Part 2 (2019)</item>
   </string-array>
 
   <string name="footer_scroll_behavior" translatable="false">com.seemingamusing.android.playground.footer.ScrollingViewWithFooterBehavior</string>
