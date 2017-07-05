@@ -45,17 +45,28 @@ public class FooterActivity extends AppCompatActivity {
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.menu_footer, menu);
+    getMenuInflater().inflate(R.menu.menu_toggleable_element, menu);
     return true;
   }
 
   @Override public boolean onOptionsItemSelected(MenuItem item) {
     int id = item.getItemId();
     if (id == R.id.action_show) {
-      mFooterBar.setVisibility(View.VISIBLE);
+      toggleFooter(item);
       return true;
     }
     return super.onOptionsItemSelected(item);
+  }
+
+  private void toggleFooter(MenuItem item) {
+    boolean isShowing = mFooterBar.getVisibility() == View.VISIBLE;
+    if (isShowing) {
+      hideFooter();
+      item.setTitle(R.string.action_show);
+    } else {
+      mFooterBar.setVisibility(View.VISIBLE);
+      item.setTitle(R.string.action_hide);
+    }
   }
 
   @OnClick(R.id.footer_bar) public void hideFooter() {
