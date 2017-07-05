@@ -3,7 +3,6 @@ package com.seemingamusing.android.playground.footer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,12 +11,13 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.seemingamusing.android.playground.R;
+import com.seemingamusing.android.playground.common.BehaviorDrivenRecyclerView;
 import com.seemingamusing.android.playground.common.MockedDataAdapter;
 
 public class FooterActivity extends AppCompatActivity {
 
   @Bind(R.id.toolbar) Toolbar mToolbar;
-  @Bind(R.id.content_view) RecyclerView mContentView;
+  @Bind(R.id.content_view) BehaviorDrivenRecyclerView mContentView;
   @Bind(R.id.footer_bar) View mFooterBar;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class FooterActivity extends AppCompatActivity {
   }
 
   private void initializeContentView() {
+    mContentView.setBehavior(new FooterBarBehavior());
     mContentView.setLayoutManager(new LinearLayoutManager(this));
     mContentView.setAdapter(new MockedDataAdapter(this));
   }
