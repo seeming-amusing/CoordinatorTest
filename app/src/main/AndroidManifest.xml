@@ -21,18 +21,21 @@
 
     <activity
       android:name=".footer.FooterActivity"
+      android:exported="true"
       android:label="@string/sample_footer"
       android:parentActivityName=".MainActivity"
       android:theme="@style/AppTheme.NoActionBar" />
 
     <activity
       android:name=".bottomsheet.BottomSheetActivity"
+      android:exported="true"
       android:label="@string/sample_bottom_sheet"
       android:parentActivityName=".MainActivity"
       android:theme="@style/AppTheme" />
 
     <activity
       android:name=".topbar.TopBarActivity"
+      android:exported="true"
       android:label="@string/sample_top_bar"
       android:parentActivityName=".MainActivity"
       android:theme="@style/AppTheme.NoActionBar" />
