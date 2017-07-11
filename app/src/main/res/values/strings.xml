@@ -93,6 +93,7 @@
   <string name="sample_footer">Footer Sample</string>
   <string name="sample_bottom_sheet">Bottom Sheet Sample</string>
   <string name="sample_top_bar">Top Bar Sample</string>
+  <string name="sample_stacking">Stacking Sample</string>
   <string name="action_show">Show Element</string>
   <string name="action_hide">Hide Element</string>
   <string name="footer_bar_content">Footer Content</string>
