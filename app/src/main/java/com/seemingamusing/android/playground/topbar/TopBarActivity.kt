@@ -2,21 +2,18 @@ package com.seemingamusing.android.playground.topbar
 
 import android.os.Bundle
 import android.support.design.widget.AppBarLayout
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
 import android.view.ViewGroup
+import com.seemingamusing.android.playground.BaseContentActivity
 import com.seemingamusing.android.playground.R
-import com.seemingamusing.android.playground.common.MockedDataAdapter
 import kotlinx.android.synthetic.main.activity_top_bar.*
-import kotlinx.android.synthetic.main.content_adapter.*
 
-class TopBarActivity : AppCompatActivity() {
+class TopBarActivity : BaseContentActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_top_bar)
     initializeTopBar()
-    initializeContentView()
+    initializeContentView(AppBarLayout.ScrollingViewBehavior())
   }
 
   private fun initializeTopBar() {
@@ -26,13 +23,5 @@ class TopBarActivity : AppCompatActivity() {
       else -> 0
     }
     (top_bar.layoutParams as ViewGroup.MarginLayoutParams).topMargin += statusBarHeight
-  }
-
-  private fun initializeContentView() {
-    content_view.apply {
-      setBehavior(AppBarLayout.ScrollingViewBehavior())
-      layoutManager = LinearLayoutManager(context)
-      adapter = MockedDataAdapter(context)
-    }
   }
 }

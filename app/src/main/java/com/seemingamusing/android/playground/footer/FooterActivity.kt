@@ -1,29 +1,22 @@
 package com.seemingamusing.android.playground.footer
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import com.seemingamusing.android.playground.BaseContentActivity
 import com.seemingamusing.android.playground.R
-import com.seemingamusing.android.playground.common.MockedDataAdapter
 import kotlinx.android.synthetic.main.activity_footer.*
-import kotlinx.android.synthetic.main.content_adapter.*
 
-class FooterActivity : AppCompatActivity() {
+class FooterActivity : BaseContentActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_footer)
     setTitle(R.string.sample_footer)
     setSupportActionBar(toolbar)
-    content_view.apply {
-      setBehavior(FooterBarBehavior())
-      layoutManager = LinearLayoutManager(context)
-      adapter = MockedDataAdapter(context)
-    }
+    initializeContentView(FooterBarBehavior())
     footer_bar.setOnClickListener { footer_bar.visibility = View.GONE }
   }
 
