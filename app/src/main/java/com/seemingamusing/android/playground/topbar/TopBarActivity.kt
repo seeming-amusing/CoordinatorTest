@@ -2,9 +2,9 @@ package com.seemingamusing.android.playground.topbar
 
 import android.os.Bundle
 import android.support.design.widget.AppBarLayout
+import android.support.design.widget.CoordinatorLayout
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.view.ViewGroup
 import com.seemingamusing.android.playground.R
 import com.seemingamusing.android.playground.common.MockedDataAdapter
 import kotlinx.android.synthetic.main.activity_top_bar.*
@@ -15,17 +15,8 @@ class TopBarActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_top_bar)
-    initializeToolbar()
     initializeTopBar()
     initializeContentView()
-  }
-
-  private fun initializeToolbar() {
-    toolbar.apply {
-      setTitle(R.string.sample_top_bar)
-      setNavigationIcon(R.drawable.ic_arrow_back)
-      setNavigationOnClickListener { finish() }
-    }
   }
 
   private fun initializeTopBar() {
@@ -34,7 +25,7 @@ class TopBarActivity : AppCompatActivity() {
       resourceId > 0 -> resources.getDimensionPixelSize(resourceId)
       else -> 0
     }
-    (top_bar.layoutParams as ViewGroup.MarginLayoutParams).topMargin += statusBarHeight
+    (top_bar.layoutParams as CoordinatorLayout.LayoutParams).topMargin += statusBarHeight
   }
 
   private fun initializeContentView() {
